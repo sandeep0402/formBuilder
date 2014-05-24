@@ -1,0 +1,77 @@
+<html>
+<head>
+	<style type="text/css">
+		.Containt{ width: 100%; height: 800px; padding: 0.5em; float: left; margin: 10px; background-color:#ffff00;}
+		#form-fields li .val{display: none;}
+		.Containt li .val{display: inline-block}
+		.Containt li .txt{display: none}
+		.ui-draggable-dragging .val{display: none !important}
+		.road span{cursor: pointer;}
+	</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src=" http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+
+<script>
+$(document).ready(function()
+{
+  
+$('#form-fields li').draggable({
+        revert: "valid",
+        appendTo: "body",
+        helper: "clone",
+        cursor: "move"
+    });
+$(".Containt").droppable({  
+    accept: ":not(.ui-sortable-helper)",
+    drop: function(event, ui) {   
+
+    /* Remove Comment if want to use each element once.
+         var self = $(this);
+        self.find(".placeholder").remove();
+    */
+         var newclass = "road";
+         // change class name whatever you want
+
+
+        var item = ui.draggable.html(); 
+        var s =item; 
+        var r = /<span>(.*)<\/span>/g;
+        var newtxt=s.replace(r,""); 
+
+        $("<div/>", {            
+            "html": newtxt + "<span>Remove This</span>",
+            "class": newclass
+        }).appendTo(this);   
+    }
+
+
+    }).sortable({
+        cursor: "move",
+        items: "div:not(.placeholder)",
+      sort: function() {
+        $( this ).removeClass( "ui-state-default" );
+      }
+    });
+  
+ $(document).delegate(".road span", "click", function() {
+     $(this).parent().remove();
+    });
+});
+function showData(){
+	alert($('#content1').html());
+}
+</script>
+</head>
+<body>
+	<ul id="form-fields">
+        <li id="text-field"><span>Text Field</span><input type="text" name="textbox" class="val" /></li>
+        <li id="textarea-field"><span>Text Area</span><textarea rows="4" cols="50" class="val"></textarea></li>
+        <li id="select-field"><span>mySelect</span><select class="val"><option value="option1">option1</option></select></li>
+        <li id="password-field"><span>Password</span><input type="password" name="pwd" class="val" /></li>
+    </ul>
+
+	<input type="button" onclick="showData()" value="show Text"/>
+	<div id="content1" class="Containt"></div>
+</body>
+</html>
