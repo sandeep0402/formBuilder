@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Form Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+ <link rel="shortcut icon" href="img/favicon.png">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src=" http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control">
+						</div> <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+			<div class="jumbotron">
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+			</div>
+			 <a id="modal-143895" href="#modal-container-143895" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+			
+			<div class="modal fade" id="modal-container-143895" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" id="myModalLabel">
+								Modal title
+							</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row clearfix">
+		<div class="col-md-3 column">
+			<div class="panel-group" id="panel-703733">
+				<div class="panel panel-primary ">
+					<div class="panel-heading">
+						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-703733" href="#panel-element-123732">Basic Form Elements >></a>
+					</div>
+					<div id="panel-element-123732" class="panel-collapse collapse in">
+						<div class="panel-body">
+						<form class="form-horizontal" role="form">
+								<ul id="form-fields">
+									<li id="text-field">	
+										<div class="control-group">
+										  <label class="control-label" for="textinput">Text Input</label>
+										  <div class="controls">
+											<input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input-xlarge">
+											<p class="help-block">help</p>
+										  </div>
+										</div>
+									</li>
+									<li id="textarea-field">
+										<div class="control-group">
+										  <label class="control-label" for="radios">Multiple Radios</label>
+										  <div class="controls">
+											<label class="radio" for="radios-0">
+											  <input type="radio" name="radios" id="radios-0" value="Option one" checked="checked">
+											  Option one
+											</label>
+											<label class="radio" for="radios-1">
+											  <input type="radio" name="radios" id="radios-1" value="Option two">
+											  Option two
+											</label>
+										  </div>
+										</div>
+									</li>
+									<li id="select-field">
+										<div class="control-group">
+										  <label class="control-label" for="checkboxes">Multiple Checkboxes</label>
+										  <div class="controls">
+											<label class="checkbox" for="checkboxes-0">
+											  <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Option one">
+											  Option one
+											</label>
+											<label class="checkbox" for="checkboxes-1">
+											  <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Option two">
+											  Option two
+											</label>
+										  </div>
+										</div>
+									</li>
+									<li id="password-field">
+										<div class="control-group">
+										  <label class="control-label" for="selectbasic">Select Basic</label>
+										  <div class="controls">
+											<select id="selectbasic" name="selectbasic" class="input-xlarge">
+											  <option>Option one</option>
+											  <option>Option two</option>
+											</select>
+										  </div>
+										</div>									
+									</li>
+									<li id="password-field">
+										<div class="control-group">
+										  <label class="control-label" for="filebutton">File Button</label>
+										  <div class="controls">
+											<input id="filebutton" name="filebutton" class="input-file" type="file">
+										  </div>
+										</div>									
+									</li>
+									<li id="password-field">
+										<!-- Button -->
+										<div class="control-group">
+										  <label class="control-label" for="singlebutton">Single Button</label>
+										  <div class="controls">
+											<button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+										  </div>
+										</div>									
+									</li>
+									<li id="password-field"><span>Password</span><input type="password" name="pwd" class="val" /></li>
+									<li id="password-field"><span>Password</span><input type="password" name="pwd" class="val" /></li>
+									</ul>
+						</form>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-703733" href="#panel-element-900024">Advanced Form Elements >></a>
+					</div>
+					<div id="panel-element-900024" class="panel-collapse collapse">
+						<div class="panel-body">
+							Advanced Form Elements
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form id="content1 " class="col-md-5 column Containt well " >
+		</form>
+		<div class="col-md-4 column">
+			<div class="tabbable" id="tabs-905084">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#panel-698692" data-toggle="tab">Section 1</a>
+					</li>
+					<li>
+						<a href="#panel-317740" data-toggle="tab">Section 2</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-698692">
+						<p>
+							I'm in Section 1.
+						</p>
+					</div>
+					<div class="tab-pane" id="panel-317740">
+						<p>
+							Howdy, I'm in Section 2.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

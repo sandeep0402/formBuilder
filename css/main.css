@@ -1,0 +1,34 @@
+.Containt {
+	border: 1px solid #DDDDDD; 
+	min-height:250px;"
+}
+
+#form-fields li .val {
+    display: none;
+}
+
+.Containt li .val {
+    display: inline-block;
+}
+
+.Containt li .txt {
+    display: none;
+}
+
+.Containt div{
+	margin:10px;
+	
+}
+
+.ui-draggable-dragging .val {
+    display: none !important;
+}
+
+.road span {
+    cursor: pointer;
+}
+
+.row .panel-group .panel-title{
+	color:white;
+	padding:4px;
+}
